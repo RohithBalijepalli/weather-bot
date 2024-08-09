@@ -12,6 +12,7 @@ Welcome to the Weather bot! This project is a simple full-stack application that
 ## Screenshots
 
 ![Chatbot Interface](assets/ss.png)
+![Chatbot Interface](assets/ss2.png)
 
 ## Technologies Used
 
