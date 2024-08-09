@@ -9,6 +9,10 @@ Welcome to the Weather bot! This project is a simple full-stack application that
 - **Custom Animations**: Includes a smooth slide-up animation for the chatbox on page load, creating a dynamic user experience.
 - **Styled User Interface**: The UI features a bold blue-green gradient and matching user message bubbles that enhance the overall aesthetics of the application.
 
+## Screenshots
+
+![Chatbot Interface](assets/ss.png)
+
 ## Technologies Used
 
 - **Front-End**:
