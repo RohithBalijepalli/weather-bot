@@ -53,7 +53,7 @@ Open your browser and go to `http://localhost:3000`
 
 ### Project Structure
 
-**index.html**: The main HTML file for the frontend.
-**styles.css**: Contains all the CSS styles for the project.
-**scripts.js**: JavaScript file handling front-end logic.
-**server.mjs**: Node.js server file to handle requests and API integration
+- **index.html**: The main HTML file for the frontend.
+- **styles.css**: Contains all the CSS styles for the project.
+- **scripts.js**: JavaScript file handling front-end logic.
+- **server.mjs**: Node.js server file to handle requests and API integration
