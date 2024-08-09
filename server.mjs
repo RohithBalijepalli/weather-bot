@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 const app = express();
 const port = 3000;
 
-const apiKey = 'b87e8cc5a0ca62560bc57ecf96f9693a'; // Replace with your OpenWeatherMap API key
+const apiKey = 'OPENWEATHER_API_KEY';
 
 app.use(express.static('public'));
 
@@ -12,16 +12,16 @@ app.get('/weather', async (req, res) => {
     const place = req.query.place;
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${place}&units=metric&appid=${apiKey}`;
 
-    console.log(`Fetching weather data for: ${place}`); // Debugging output
+    console.log(`Fetching weather data for: ${place}`);
 
     try {
         const response = await fetch(url);
         const data = await response.json();
 
-        console.log(`API Response: ${JSON.stringify(data)}`); // Debugging output
+        console.log(`API Response: ${JSON.stringify(data)}`);
 
         if (data.cod !== 200) {
-            console.log(`Error from API: ${data.message}`); // Debugging output
+            console.log(`Error from API: ${data.message}`);
             res.json({ error: data.message });
         } else {
             res.json({
@@ -30,7 +30,7 @@ app.get('/weather', async (req, res) => {
             });
         }
     } catch (error) {
-        console.log(`Error during fetch: ${error.message}`); // Debugging output
+        console.log(`Error during fetch: ${error.message}`);
         res.json({ error: 'Unable to retrieve weather data' });
     }
 });
